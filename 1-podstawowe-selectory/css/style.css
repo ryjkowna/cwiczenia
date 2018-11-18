@@ -19,8 +19,9 @@ p {
     background-color: cadetblue;
 
 }
+
 /*dla rodzenstwa li */
-li#pierwszy + li {
+li#pierwszy ~ li {
     background-color: blue;
 }
 
