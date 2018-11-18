@@ -1,0 +1,23 @@
+[title] {
+    color: red;
+}
+
+[title="portfolio"] {
+    color: rosybrown;
+}
+
+/*~~bierze tylko te rekordy, które zawierają treść (bez spacji) tylda; z '*' wszystkie ktore zawieraja treść podaną; '^' poczatek atrybuty; $ koniec title$= "opis" */
+
+[title ~ ="o-mnie"] {
+    background-color: royalblue;
+}
+
+[title^="wiecej"] {
+    font-size: 32px;
+    color: brown;
+}
+
+[title$="wiecej"] {
+    font-size: 32px;
+    color: green;
+}
