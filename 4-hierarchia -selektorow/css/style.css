@@ -1,0 +1,7 @@
+p#par1 {
+    background-color: aqua;
+}
+
+p.par1-class {
+    background-color: red;
+}
