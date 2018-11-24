@@ -1,0 +1,9 @@
+#backround-img {
+    background-color: hotpink;
+    background-image: url("../img/truskawka.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: contain;
+/*    contain dopasowuje obrazek w tle, cover przycina */
+    
+    
