@@ -1,0 +1,26 @@
+body {
+    background-color: hotpink;
+
+}
+
+#strawberry {
+    float: left;
+    max-height: 150px;
+
+}
+
+#strawberry2 {
+    float: right;
+    max-height: 150px;
+}
+
+#strawberry {
+    float: none;
+    max-height: 150px;
+
+}
+
+p:last-child {
+    background-color: beige;
+    clear: both;
+}
