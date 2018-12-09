@@ -32,20 +32,29 @@ $(() => {
 
 // jQuery events
 
-$("#naglowek").mouseenter(() => {
-    $(".toggle").toggle(()=>{
-        $(".toggle").css({color: "red"});
-    })
+// $("#naglowek").mouseenter(() => {
+//     $(".toggle").toggle(()=>{
+//         $(".toggle").css({color: "red"});
+//     })
 
-})
-$("#naglowek").on({ //laczymy kilka eventow
-    "mouseover": () =>{ $(".toggle").css("backgroundColor", "yellow");
+// })
+// $("#naglowek").on({ //laczymy kilka eventow
+//     "mouseover": () =>{ $(".toggle").css("backgroundColor", "yellow");
 
-    },
-"dblclick": () => {
-    console.log("klick")
+//     },
+// "dblclick": () => {
+// //     console.log("klick")
+// }
+// })
+
+// Animations
+// $("#naglowek").hide(3000).show(3000);
+// $("#naglowek").fadeOut(3000).fadeIn(3000);
+// $("#naglowek").slideUp(3000).slideDown(3000);
+
+callbackZwrotny = () => {console.log("Zakonczono I animację. Uwaga startuje druga animacja");
+$("#naglowek").animate({fontSize: "2em", marginLeft: "0"}, 5000)
 }
-})
-
+$("#naglowek").animate({fontSize:"4em", marginLeft: "100px"}, 5000, callbackZwrotny);
 
 });
